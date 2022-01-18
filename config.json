@@ -1,0 +1,10 @@
+{
+    "token": "password123",
+    "port": 5000,
+    "bot": {
+        "token":"",
+        "name": "",
+        "avatar": "",
+        "receiver": ""
+    }
+}
