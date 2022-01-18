@@ -12,4 +12,15 @@ A simple website with authentication system and with a panel to send messages to
 
 # To Do
 
-1. `run
+1. `Install this repository.`
+2. `Edit the config.json`
+3. `open terminal and run node .`
+
+
+# LICENSE
+
+This repository is under GNU public license.
+
+# AUTHOR
+
+The author of this project is `trojanz07`
