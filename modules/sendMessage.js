@@ -25,9 +25,7 @@ const data = {
          },
         body: JSON.stringify(data),
     }).then(res => res.json())
-    .then(json => {
-        console.log(json);
-    })
+    .then(json => {})
 }
 
 module.exports = {sendMessage}
