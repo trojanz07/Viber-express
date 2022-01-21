@@ -14,7 +14,7 @@ function Panel(app, urlencodedParser) {
         if(token == config.token) {
            res.sendFile(__dirname + '/src/panel.html'); 
         } else {
-            res.send('Better get the hell out of here, you are not the real Trojan.')
+            res.send('Invalid Token.')
         }
     });
 };
