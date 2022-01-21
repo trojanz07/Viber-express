@@ -19,7 +19,7 @@ A simple website with authentication system and with a panel to send messages to
 
 # LICENSE
 
-This repository is under GNU public license.
+This repository is under GPL-3.0 License.
 
 # AUTHOR
 
