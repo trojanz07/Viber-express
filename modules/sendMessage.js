@@ -1,8 +1,7 @@
 const fetch = require('node-fetch');
+const { getCurrentConfig } = require("../routes/listener");
 
-const config = require('../config.json');
-
-
+const config = getCurrentConfig();
 
 function sendMessage(message) {
     

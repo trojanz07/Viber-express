@@ -4,16 +4,17 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@skylixgh/nitrojs-terminal": "^1.0.0-dev.9",
     "body-parser": "^1.19.1",
     "chalk": "^4.1.2",
     "express": "^4.17.2",
-    "node-fetch": "^2.6.6",
-    "@skylixgh/nitrojs-terminal": "^1.0.0-dev.9"
+    "merge-deep": "^3.0.3",
+    "node-fetch": "^2.6.6"
   }
 }
