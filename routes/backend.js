@@ -10,6 +10,4 @@ function PanelAPI(app, urlencodedParser) {
     });
 }
 
-// 5Hei+ui1DbGeyUkiSpXPcA==
-
 module.exports = {PanelAPI}
