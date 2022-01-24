@@ -6,7 +6,7 @@ const mergeObj = require("merge-deep");
 module.exports = function resolveConfig() {
   let resolvedConfig = {};
   const defaultConfig = {
-    token: "password123",
+    token: "goodtoremember123",
     port: 5000,
     bot: {
       token: "",
