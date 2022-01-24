@@ -1,15 +1,25 @@
+const { State } = require('@skylixgh/nitrojs-terminal');
 const terminal = require('@skylixgh/nitrojs-terminal');
-function listen(app, port) {
-    app.listen(port, () => {
-        terminal.animate('Starting...');
-        setTimeout(() =>  {
-            terminal.updateAnimation('Preparing the website...')
-            setTimeout(() =>  {
-                terminal.updateAnimation('Listening on port ' + port)
-            },2000)
-        },2000)
-    })
+const resolveConfig = require('./utils/resolveConfig');
+
+let currentConfig = {};
+
+function initiateConfigLoader() {
+    terminal.animate("Resolving your configuration");
+    currentConfig = resolveConfig();
+    terminal.stopAnimation(State.success, "Configuration loaded");
 }
 
+function listen(app, port) {
+    terminal.animate("Starting your server");
+    
+    app.listen(port, () => {
+        terminal.stopAnimation(State.success, 'Listening on port ' + port);
+    });
+}
 
-module.exports = {listen}
+function getCurrentConfig() {
+    return { ...currentConfig };
+}
+
+module.exports = {listen, getCurrentConfig, initiateConfigLoader}
