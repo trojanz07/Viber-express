@@ -1,7 +1,7 @@
 {
   "name": "viber-express",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple website with authentication system and with a panel to send messages to your viber bot subscribers. Using Viber API.",
   "main": "main.js",
   "scripts": {
     "start": "node ./"
