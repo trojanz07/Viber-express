@@ -1,11 +1,11 @@
-const express = require('express');
-const app = express();
-const web = require('./routes/listener');
-const bodyParser = require('body-parser');
-const website = require('./routes/frontend');
-const ViberJS = require('./routes/backend');
-
+const web = require("./routes/listener");
 web.initiateConfigLoader();
+
+const express = require("express");
+const app = express();
+const bodyParser = require("body-parser");
+const website = require("./routes/frontend");
+const ViberJS = require("./routes/backend");
 
 const config = web.getCurrentConfig();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
