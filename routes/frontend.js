@@ -12,7 +12,7 @@ function Panel(app, urlencodedParser) {
     app.post('/panel', urlencodedParser, (req, res) => {
         let token = req.body.token;
 
-        if(token == config.token) {
+        if (token == config.token) {
            res.sendFile(__dirname + '/src/panel.html'); 
         } else {
             res.send('Invalid Token.')
