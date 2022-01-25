@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "trojanz07",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "dependencies": {
     "@skylixgh/nitrojs-terminal": "^1.0.0-dev.9",
     "body-parser": "^1.19.1",
